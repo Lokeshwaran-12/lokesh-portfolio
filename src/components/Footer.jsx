@@ -16,10 +16,10 @@ const Footer = () => {
           >
             <div className="flex items-center mb-2">
               <div className="w-[2px] h-6 bg-light mr-2"></div>
-              <span className="font-mono text-lg tracking-wider">NITHIN MANDA</span>
+              <span className="font-mono text-lg tracking-wider">LOKESHWARAN S</span>
             </div>
             <p className="text-muted text-sm">
-              Tech enthusiast building innovative solutions
+              AI Engineer building innovative solutions
             </p>
           </motion.div>
 
@@ -32,7 +32,9 @@ const Footer = () => {
           >
             <a href="#home" className="text-muted hover:text-light transition-colors">Home</a>
             <a href="#projects" className="text-muted hover:text-light transition-colors">Projects</a>
+            <a href="#experience" className="text-muted hover:text-light transition-colors">Experience</a>
             <a href="#skills" className="text-muted hover:text-light transition-colors">Skills</a>
+            <a href="#education" className="text-muted hover:text-light transition-colors">Education</a>
             <a href="#contact" className="text-muted hover:text-light transition-colors">Contact</a>
           </motion.div>
         </div>
@@ -45,7 +47,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="text-sm text-muted mb-4 md:mb-0"
           >
-            © {currentYear} Nithin Manda. All rights reserved.
+            © {currentYear} Lokeshwaran. All rights reserved.
           </motion.p>
 
 

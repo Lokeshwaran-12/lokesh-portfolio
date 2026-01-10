@@ -6,70 +6,84 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "FitBill - Gym Management System",
-      description: "A comprehensive cross-platform solution designed for modern gym businesses that streamlines membership management, attendance tracking, and financial operations. The system automatically sends timely membership renewal notifications, monitors daily facility usage patterns, and provides insightful financial analytics through intuitive dashboards, enabling gym owners to make data-driven decisions and optimize operational efficiency.",
-      tech: ["React Native", "Express.js", "Prisma", "SQL", "AWS Lambda"],
-      image: "/images/fitbill-preview.png",
-      liveLink: "http://youtube.com/watch?v=Dbkf_2kh1ho",
+      title: "NEET Tutoring System with Fine-tuned LLaMA",
+      description: "Fine-tuned LLaMA using LoRA with RAG on TN State Board textbooks for a NEET tutoring system. Deployed a FastAPI backend supporting real-time, structured multilingual Q&A. This advanced educational AI system provides personalized tutoring assistance for NEET exam preparation with accurate, curriculum-aligned responses.",
+      tech: ["LLaMA", "LoRA Fine-tuning", "RAG", "TTS/ STT", "FastAPI","Docker", "Real-time Processing", "GPU Optimization"],
+      image: "/images/neet-tutoring-preview.png",
+      liveLink: "https://github.com/Lokeshwaran-12/neet-tutoring-llama",
       highlights: [
-        "Automated membership renewal alerts",
-        "Daily check-in/check-out tracking",
-        "Financial dashboards",
-        "Supports hundreds of daily active users"
+        "LLaMA model fine-tuned with LoRA",
+        "RAG on TN State Board curriculum",
+        "Real-time multilingual support",
+        "Structured Q&A for NEET preparation"
       ]
     },
     {
-      title: "Student Attendance Tracking System",
-      description: "An innovative serverless attendance solution leveraging AWS Lambda and Python to deliver cost-effective, real-time attendance tracking for educational institutions. The system employs sophisticated HTML parsing techniques with BeautifulSoup to extract attendance data from various sources, processes it through a highly optimized pipeline, and delivers accurate, instantaneous results to thousands of users daily without incurring operational costs, making it an ideal solution for resource-constrained educational environments.",
-      tech: ["AWS Lambda", "Python", "WebSocket", "DynamoDB", "BeautifulSoup"],
-      image: "/images/attendance-preview.png",
-      liveLink: "https://github.com/sri-ganeshk/Attendance_tracker",
+      title: "Tamil Story Generator using LLM (Hackathon Winner - StartupTN  🏆 )",
+      description: "Designed a GenAI system to generate Tamil stories and advertisement content, integrated with Tamil TTS for voice output. This innovative system combines creative writing capabilities with text-to-speech technology to produce engaging Tamil content for various applications.",
+      tech: ["Generative AI", "Tamil LLM", "TTS","Prompt Engineering", "Python", "NLP", "Content Generation",],
+      image: "/images/tamil-story-preview.png", 
+      liveLink: "https://github.com/Lokeshwaran-12/tamil-story-generator",
       highlights: [
-        "Handles ~3,000 unique daily users",
-        "10,000+ requests/day at zero cost",
-        "Avg response time of 1.5-2 seconds",
-        "Real-time HTML parsing"
+        "Tamil story generation",
+        "Advertisement content creation", 
+        "Integrated Tamil TTS output",
+        "Creative AI content system"
       ]
     },
     {
-      title: "StudySphere – Curated Learning Platform",
-      description: "An advanced educational platform that revolutionizes self-paced learning through AI-powered content organization and generation. StudySphere allows users to curate and structure courses on any topic with intelligent assistance, automatically generating customized flashcards, comprehensive notes, and interactive quizzes tailored to individual learning preferences. The integration with Google Gemini API enables sophisticated content summarization and knowledge extraction, creating a personalized learning experience that adapts to users' comprehension levels and learning styles.",
-      tech: ["Next.js", "Prisma", "Google Gemini API", "TailwindCSS", "PostgreSQL"],
-      image: "/images/studysphere-preview.png",
-      liveLink: "https://hackthon-six.vercel.app/",
+      title: "AI Agent with LlamaIndex for Company Enquiry",
+      description: "Built an intelligent AI agent system with LlamaIndex capabilities to handle company inquiries and provide accurate information about services, policies, and procedures. The system maintains context-aware conversations and provides reliable responses based on company knowledge base.",
+      tech: ["AI Agents", "LlamaIndex", "Company Knowledge Base", "Context Management", "LangChain", "FastAPI", "Azure Deployment","Docker"],
+      image: "/images/company-rag-agent-preview.png",
+      liveLink: "https://github.com/Lokeshwaran-12/company-rag-agent",
       highlights: [
-        "Automatic flashcards & notes generation",
-        "On-the-fly quizzes",
-        "AI-powered content summarization",
-        "Self-paced, structured learning"
+        "Context-aware conversations",
+        "Company knowledge integration",
+        "Automated inquiry handling",
+        "Multi-turn dialogue support"
       ]
     },
     {
-      title: "Movie Review Platform",
-      description: "A modern, fully responsive web application designed for movie enthusiasts to discover, review, and engage with film content. The platform leverages The Movie Database API to provide users with real-time access to a vast library of films, complete with detailed information and high-quality imagery. With a robust user authentication system using JWT tokens, the application delivers personalized experiences allowing users to create accounts, save favorites, and contribute their own reviews to the community. The intuitive interface, built with React and styled with Tailwind CSS, ensures a seamless viewing experience across all devices.",
-      tech: ["React", "Tailwind CSS", "TMDB API", "MongoDB", "JWT", "Responsive Design"],
-      image: "/images/movie-review-preview.png",
-      liveLink: "https://movie-review-omega-seven.vercel.app/",
+      title: "Medical Handwritten Prescription Extraction (VLM)",
+      description: "Fine-tuned a Vision-Language Model to extract handwritten prescriptions and convert them into structured JSON for EMR integration. This system revolutionizes medical data digitization by automatically processing handwritten prescriptions with high accuracy.",
+      tech: ["Vision-Language Model", "Fine-tuning", "Medical NLP", "JSON Processing", "EMR Integration"],
+      image: "/images/prescription-vlm-preview.png",
+      liveLink: "https://github.com/Lokeshwaran-12/prescription-vlm",
       highlights: [
-        "Real-time movie data integration with TMDB API",
-        "Secure JWT-based user authentication",
-        "Intuitive and fully responsive design",
-        "Personalized user experiences with saved preferences"
+        "Handwritten text recognition",
+        "Medical prescription parsing",
+        "Structured JSON output",
+        "EMR system integration"
       ]
     },
     {
-      title: "Pressure Cooker Whistle Counter",
-      description: "An innovative Android application born from everyday necessity, designed to automate the mundane task of counting pressure cooker whistles during cooking. This offline-first app utilizes sophisticated audio processing algorithms to detect and count whistles in real-time using the device's microphone, without requiring an internet connection. With a focus on privacy, the application processes all audio data locally and on-the-fly without storing any recordings. The implementation includes custom sound analysis using Fast Fourier Transform (FFT) and Tarsos DSP library to accurately identify the distinctive whistle frequency pattern amid background noise, making cooking precision effortless for users.",
-      tech: ["Java", "Kotlin", "FFT", "Tarsos DSP", "Spectrograms", "Android Media"],
-      image: "/images/whistle-counter-preview.png",
-      liveLink: "",
+      title: "Tamil Nadu Citizen Services Chatbot",
+      description: "Built a bilingual (Tamil/English) RAG-based chatbot using a fine-tuned Tamil LLM to answer government service queries reliably. The system leverages advanced NLP techniques to understand and respond to citizen queries in both Tamil and English, providing accurate information about government services and procedures.",
+      tech: ["Fine-tuned Tamil LLM", "RAG", "Python", "FastAPI", "Tamil NLP", "Bilingual Processing"],
+      image: "/images/tn-chatbot-preview.png",
+      liveLink: "https://github.com/Lokeshwaran-12/tn-citizen-chatbot",
       highlights: [
-        "Offline operation for areas with limited connectivity",
-        "Privacy-focused with no data storage",
-        "Real-time audio processing and frequency analysis",
-        "Future ML integration for multi-cooker scenarios"
+        "Bilingual Tamil-English support",
+        "Fine-tuned Tamil LLM integration",
+        "RAG-based accurate responses",
+        "Government service query handling"
+      ]
+    },
+    {
+      title: "E-Commerce RAG Retrieval System",
+      description: "Developed an intelligent e-commerce assistant using RAG (Retrieval-Augmented Generation) to help customers find products and get detailed information. The system combines product knowledge base with LLM capabilities to provide personalized shopping recommendations and support.",
+      tech: ["RAG", "Vector Database", "LLM", "CLIP", "Product Search", "FastAPI"],
+      image: "/images/ecommerce-rag-preview.png",
+      liveLink: "https://github.com/Lokeshwaran-12/ecommerce-rag-system",
+      highlights: [
+        "Product recommendation engine",
+        "RAG-based customer support",
+        "Vector similarity search",
+        "Personalized shopping assistant"
       ]
     }
+    
   ];
   
   const containerVariants = {

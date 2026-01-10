@@ -7,20 +7,20 @@ const Skills = () => {
 
   const categories = [
     {
-      name: "Frontend",
-      skills: ["React.js", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"]
+      name: "AI & Machine Learning",
+      skills: ["Machine Learning", "Deep Learning", "Generative AI", "Agentic AI","Data Analysis", "Vision Language Models", "Large Language Models", "Retrieval-Augmented Generation"]
     },
     {
-      name: "Backend",
-      skills: ["Node.js", "Express.js", "Python", "C++", "REST APIs", "WebSockets"]
+      name: "AI Tools & Frameworks", 
+      skills: ["LangChain","LangGraph","Prompt Engineering", "TTS", "STT", "AI Automation","LlamaIndex","CrewAI", "n8n Automation", "LoRA Fine-tuning","Hugging Face","Vector Databases"]
     },
     {
-      name: "Database",
-      skills: ["SQL", "Prisma", "MongoDB", "DynamoDB", "PostgreSQL"]
+      name: "Backend & DevOps",
+      skills: ["FastAPI", "Docker", "Linux", "MLOps", "DevOps", "Google Cloud Platform", "API Development", "Azure Cloud Platform"]
     },
     {
-      name: "DevOps & Tools",
-      skills: ["AWS Lambda", "Git", "BeautifulSoup", "Google Gemini API"]
+      name: "Programming & Others",
+      skills: ["Python", "C Programming", "Java", "IoT", "Github", "Model Versioning", "Cloud Deployment"]
     }
   ];
 
@@ -72,10 +72,10 @@ const Skills = () => {
                 {category.skills.map((skill, j) => (
                   <motion.span 
                     key={j} 
-                    className="text-sm bg-secondary px-3 py-1 rounded-sm"
+                    className="text-sm bg-muted bg-opacity-20 text-light px-3 py-1 rounded-sm border border-muted border-opacity-30"
                     whileHover={{ 
                       y: -2, 
-                      backgroundColor: "rgba(245, 245, 245, 0.05)", 
+                      backgroundColor: "rgba(115, 115, 115, 0.3)", 
                       transition: { duration: 0.2 } 
                     }}
                   >

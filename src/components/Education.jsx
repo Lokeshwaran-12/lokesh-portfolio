@@ -7,26 +7,34 @@ const Education = () => {
 
   const education = [
     {
-      institution: "Vasavi College of Engineering",
-      degree: "Bachelor of Engineering",
-      field: "Electronics and Communication Engineering (ECE)",
-      period: "2019-2023"
+      institution: "Karunya Institute of Technology and Sciences - Coimbatore",
+      degree: "Bachelor of Technology",
+      field: "Computer Science and Engineering (AI Specialization)",
+      period: "Aug 2023 - May 2027"
     },
     {
-      institution: "Sri Chaitanya Junior College",
-      degree: "Intermediate",
-      field: "MPC",
-      period: "2017-2019"
+      institution: "St. Paul Matricular Higher Secondary School - Cuddalore",
+      degree: "Higher Secondary (12th Standard)",
+      field: "Computer Science - English Medium",
+      period: "April 2023"
     }
   ];
 
   const achievements = [
-    "Winner – IWD Hackathon by Google Developer Group Hyderabad",
-    "4* Coder on CodeChef, solved 600+ DSA problems across platforms like LeetCode, CodeChef, and CSES",
-    "CodeChef Student Chapter & GDG CP Lead – Led competitive programming events and workshops",
-    "National Handball Goalkeeper – Kendriya Vidyalaya",
-    "2019 National & Indian National Mathematics Olympiad (INMO) Regionalist",
-    "Participated in Hackathon conducted by VIIT ACM Chapter"
+    "2nd Prize – StartupTN 'தமிழி' Language Technology Hackathon",
+    "Member, Rotaract Club - Karunya University"
+  ];
+
+  const certifications = [
+    "Certified in Machine Learning & LangChain by DeepLearning.ai",
+    "NVIDIA Generative AI Course Certification",
+    "Cisco NetAcad - Programming in C and Python Certifications",
+    "Infosys Certifications - IoT Course, Java Course, Gen AI"
+  ];
+
+  const languages = [
+    "Tamil (Native)",
+    "English (Fluent)"
   ];
 
   const containerVariants = {
@@ -84,30 +92,76 @@ const Education = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* Languages */}
+            <div className="mt-8">
+              <h3 className="text-xl font-medium mb-6 flex items-center">
+                <div className="w-4 h-4 border border-light mr-3"></div>
+                Languages
+              </h3>
+
+              <ul className="space-y-4">
+                {languages.map((language, i) => (
+                  <motion.li
+                    key={i}
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span className="text-light mt-1 mr-2 opacity-60">⁕</span>
+                    <span>{language}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
 
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
+            className="space-y-8"
           >
-            <h3 className="text-xl font-medium mb-6 flex items-center">
-              <div className="w-4 h-4 border border-light mr-3"></div>
-              Achievements
-            </h3>
+            {/* Achievements */}
+            <div>
+              <h3 className="text-xl font-medium mb-6 flex items-center">
+                <div className="w-4 h-4 border border-light mr-3"></div>
+                Achievements & Activities
+              </h3>
 
-            <ul className="space-y-4">
-              {achievements.map((achievement, i) => (
-                <motion.li
-                  key={i}
-                  className="flex items-start"
-                  variants={itemVariants}
-                >
-                  <span className="text-light mt-1 mr-2 opacity-60">⁕</span>
-                  <span>{achievement}</span>
-                </motion.li>
-              ))}
-            </ul>
+              <ul className="space-y-4">
+                {achievements.map((achievement, i) => (
+                  <motion.li
+                    key={i}
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span className="text-light mt-1 mr-2 opacity-60">⁕</span>
+                    <span>{achievement}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Certifications */}
+            <div>
+              <h3 className="text-xl font-medium mb-6 flex items-center">
+                <div className="w-4 h-4 border border-light mr-3"></div>
+                Certifications
+              </h3>
+
+              <ul className="space-y-4">
+                {certifications.map((cert, i) => (
+                  <motion.li
+                    key={i}
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span className="text-light mt-1 mr-2 opacity-60">⁕</span>
+                    <span>{cert}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
 
             <motion.div
               className="mt-8 p-4 border border-muted border-opacity-20 bg-secondary bg-opacity-30"

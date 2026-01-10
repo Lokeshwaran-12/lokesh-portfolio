@@ -14,7 +14,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Projects', 'Skills', 'Education', 'Contact'];
+  const navItems = ['Home', 'Projects', 'Experience', 'Skills', 'Education', 'Contact'];
 
   const headerVariants = {
     initial: { y: -100 },
@@ -50,7 +50,7 @@ const Header = () => {
           className="flex items-center"
         >
           <div className="w-[2px] h-6 bg-light mr-2"></div>
-          <span className="font-mono text-lg tracking-wider">NM</span>
+          <span className="font-mono text-lg tracking-wider">LS</span>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -65,10 +65,10 @@ const Header = () => {
                 animate="visible"
               >
                 <a
-                  href={`#${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase() === 'experience' ? 'experience' : item.toLowerCase()}`}
                   className="text-sm font-medium hover:text-light transition-colors duration-300"
                 >
-                  {item}
+                  {item === 'Experience' ? 'Professional Experience' : item}
                 </a>
               </motion.li>
             ))}
@@ -119,11 +119,11 @@ const Header = () => {
                     transition={{ duration: 0.2 }}
                   >
                     <a
-                      href={`#${item.toLowerCase()}`}
+                      href={`#${item.toLowerCase() === 'experience' ? 'experience' : item.toLowerCase()}`}
                       className="text-sm font-medium"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item}
+                      {item === 'Experience' ? 'Professional Experience' : item}
                     </a>
                   </motion.li>
                 ))}
